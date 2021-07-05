@@ -8,7 +8,7 @@ body {
 }
 
 div {
-  position: relative;
+  position: static;
   margin: -10px auto;
   text-align: center;
 }
