@@ -10,7 +10,7 @@ for (var i = 0; i < word.length; i++) {
 }
 
 setTimeout(write, 75);
-incrementer = setTimeout(inc, 500);
+incrementer = setTimeout(inc, 300);
 
 function write() {
   for (var i = letter_count; i < word.length; i++) {
@@ -30,14 +30,14 @@ function inc() {
     finished = true;
     
   } else {
-    setTimeout(inc, 500);
+    setTimeout(inc, 300);
   }
 }
 
 function reset() {
   letter_count = 0;
   finished = false;
-  setTimeout(inc, 500);
+  setTimeout(inc, 300);
   setTimeout(write, 75);
   $("span").removeClass("glow");
 }
