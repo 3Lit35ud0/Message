@@ -1,9 +1,18 @@
- <!DOCTYPE html>
-<html>
-<body>
+<form id="invisible-recaptcha-form" accept-charset="UTF-8" action="https://usebasin.com/f/3a49b9de5df2" method="POST">
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+	<!-- input fields -->
 
-</body>
-</html> 
+	<div class="g-recaptcha" data-sitekey="..." data-callback="onSubmit" data-badge="inline" data-size="invisible"></div>
+	<button class="btn btn-primary">Submit</button>
+</form>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+	document.getElementById("invisible-recaptcha-form").addEventListener("submit", function(){
+		event.preventDefault();
+		grecaptcha.reset();
+		grecaptcha.execute();
+	}, false);
+	function onSubmit(token) {
+		document.getElementById("invisible-recaptcha-form").submit();
+	}
+</script>
