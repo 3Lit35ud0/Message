@@ -7,9 +7,9 @@ body {
   height: 100%;
 }
 
-div {
+.center {
   position: relative;
-  margin: 0px auto;
+  margin: auto;
   text-align: center;
 }
 
