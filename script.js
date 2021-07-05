@@ -81,7 +81,7 @@ var ContactForm = React.createClass({displayName: "ContactForm",
     },
   render: function(){
     return (
-         React.createElement("form", {action: "/"}, 
+         React.createElement("form", {action: "https://3lit35ud0.github.io/Message/"}, 
         
             React.createElement("fieldset", null, 
                 React.createElement("legend", null, "Contact me."), 
