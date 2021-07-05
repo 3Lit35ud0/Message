@@ -76,7 +76,7 @@ var canvas = document.getElementById("canvas");
 			gradient.addColorStop(1, "black");
 			ctx.fillStyle = gradient;
 			//ctx.fillStyle = 'rgba(00 ,00 , 00, 1)';
-			ctx.fillRect(0, 0, 500, 500);
+			ctx.fillRect(0, 0, 200, 200);
 			//Hours
 			ctx.beginPath();
 			ctx.arc(250,250,200, degToRad(270), degToRad((hrs*30)-90));
