@@ -1,5 +1,5 @@
 const audio = new Audio("https://lasonotheque.org/UPLOAD/mp3/1417.mp3");
-
+audio.play();
 alphabet = new Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0");
 letter_count = 0;
 el = $("#loading");
@@ -30,7 +30,7 @@ function inc() {
   letter_count++;
   if (letter_count >= word.length) {
     finished = true;
-    audio.play();
+   
     
   } else {
     setTimeout(inc, 1000);
