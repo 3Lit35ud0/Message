@@ -28,7 +28,7 @@ function inc() {
   letter_count++;
   if (letter_count >= word.length) {
     finished = true;
-    setTimeout(reset, 1500);
+    
   } else {
     setTimeout(inc, 1000);
   }
